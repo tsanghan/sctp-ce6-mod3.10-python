@@ -3,7 +3,7 @@ org: my0rg
 # "app" enables Serverless Framework Dashboard features and sharing them with other Services.
 app: serverless-python-app
 # "service" is the name of this project. This will also be added to your AWS resource names.
-service: serverless-app-assignment-python
+service: tsanghan-ce6-mod3-10-python
 
 # custom:
 #   wsgi:
@@ -15,7 +15,7 @@ provider:
   region: ap-southeast-1
   s3:
     myBucket:
-      name: tsanghan-ce6-serverless-s3-bucket
+      name: tsanghan-ce6-serverless-s3-bucket-python
 
 functions:
   hello:
@@ -52,18 +52,18 @@ functions:
           method: get
       - sns:
           arn: !Ref SuperTopic
-          topicName: MyCustomTopic
+          topicName: MyCustomTopic-python
 
 resources:
   Resources:
     MyQueue:
       Type: "AWS::SQS::Queue"
       Properties:
-        QueueName: "tsanghan-ce6-Q"
+        QueueName: "tsanghan-ce6-Q-python"
     SuperTopic:
       Type: "AWS::SNS::Topic"
       Properties:
-        TopicName: "MyCustomTopic"
+        TopicName: "MyCustomTopic-python"
 
 plugins:
   - serverless-wsgi
