@@ -1,30 +1,3 @@
-# from flask import Flask, jsonify, make_response
-
-# app = Flask(__name__)
-
-# @app.route("/")
-# def home(*args):
-#     print("From ***ROOT***!!")
-#     return jsonify(message='Hello from ***HELLO*** function!')
-
-
-# @app.route("/hello")
-# def hello(*args):
-#     print("From ***HELLO***!!")
-#     return jsonify(message='Hello from ***HELLO*** function!')
-
-
-# @app.route("/hello2")
-# def hello2(*args):
-#     print("From ***HELLO***!!")
-#     return jsonify(message='Hello from ***HELLO-2*** function!')
-
-
-# @app.route("/hello3")
-# def hello3(*args):
-#     print("From ***HELLO***!!")
-#     return jsonify(message='Hello from ***HELLO-3*** function!')
-
 import json
 
 
