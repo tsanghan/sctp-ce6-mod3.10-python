@@ -64,7 +64,9 @@ resources:
       Type: "AWS::SNS::Topic"
       Properties:
         TopicName: "MyCustomTopic-python"
-
+        Subscription:
+          - Protocol: "email"
+            Endpoint: "tsanghan@gmail.com"
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
