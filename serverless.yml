@@ -16,6 +16,16 @@ provider:
   s3:
     myBucket:
       name: tsanghan-ce6-serverless-s3-bucket-python
+  environment:
+    CLASS_NAME: "sctp-ce6"
+    SNS_ARN:
+      Ref: SuperTopic
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - sns:Publish
+      Resource:
+        Ref: SuperTopic
 
 functions:
   hello:
