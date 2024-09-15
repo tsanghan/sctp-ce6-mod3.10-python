@@ -70,3 +70,4 @@ resources:
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
+  - serverless-offline
