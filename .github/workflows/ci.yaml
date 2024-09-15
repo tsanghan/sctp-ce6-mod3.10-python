@@ -58,16 +58,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Install Python 3
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.11
-      - name: Install dependencies
-        run: |
-          # python3 -m venv .env
-          # source .env/bin/activate
-          pip install --upgrade pip
-          pip install -r requirements.txt
       - name: Run installation of dependencies commands
         run: npm install
       - name: Deploy serverless
